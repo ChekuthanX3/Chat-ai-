@@ -25,4 +25,14 @@ if name == "main":
             break
         response = get_response(user_input)
         print(f"SimpleBot: {response}")
-      
+import subprocess
+import sys
+
+# Create and activate a virtual environment
+subprocess.run([sys.executable, '-m', 'venv', 'venv'])
+subprocess.run(['venv/bin/pip', 'install', '--upgrade', 'pip'])
+subprocess.run(['venv/bin/pip', 'install', '-r', 'requirements.txt'])
+
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
