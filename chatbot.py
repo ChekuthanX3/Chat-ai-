@@ -1,4 +1,4 @@
-from chatterbot import ChatBot
+from ChatterBot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 
 # Create a new chatbot
